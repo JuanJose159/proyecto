@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-5">PROYECTO_PIPELINE</h1>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="text-center">Datos para almacenar</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="/products" method="POST">
+                            <div class="mb-3">
+                                <label for="area" class="form-label">Area</label>
+                                <select class="form-control" id="area" name="area">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="MCR">MCR</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="prob" class="form-label">Prob</label>
+                                <select class="form-control" id="prob" name="prob">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="BOOKED">BOOKED</option>
+                                    <option value="CANCEL">CANCEL</option>
+                                    <option value="HIGH">HIGH</option>
+                                    <option value="LOST">LOST</option>
+                                    <option value="MID">MID</option>
+                                    <option value="LOW">LOW</option>
+                                    <option value="SAFE">SAFE</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="type" class="form-label">Type</label>
+                                <select class="form-control" id="type" name="type">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="AST">AST</option>
+                                    <option value="BCS NEW">BCS NEW</option>
+                                    <option value="BCS RNEW">BCS RNEW</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="did_serv" class="form-label">Did Serv</label>
+                                <input type="text" class="form-control" id="did_serv" name="did_serv">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sm" class="form-label">SM</label>
+                                <select class="form-control" id="sm" name="sm">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="almazzar">almazzar</option>
+                                    <option value="dgrisoli">dgrisoli</option>
+                                    <option value="maferna2">maferna2</option>
+                                    <option value="masepulv">masepulv</option>
+                                    <option value="racorone">racorone</option>  
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hw_impact" class="form-label">Hw Impact</label>
+                                <input type="text" class="form-control" id="hw_impact" name="hw_impact">
+                            </div>
+                            <div class="mb-3">
+                                <label for="customer" class="form-label">Customer</label>
+                                <input type="text" class="form-control" id="customer" name="customer">
+                            </div>
+                            <div class="mb-3">
+                                <label for="proyect_name" class="form-label">Proyect Name</label>
+                                <input type="text" class="form-control" id="proyect_name" name="proyect_name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="book_date2" class="form-label">Book Date 2</label>
+                                <input type="text" class="form-control" id="book_date2" name="book_date2">
+                            </div>
+                            <div class="mb-3">
+                                <label for="book_period" class="form-label">Book Period</label>
+                                <select class="form-control" id="book_period" name="book_period">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="FY24Q4">FY24Q4</option>
+                                    <option value="FY24Q3">FY24Q3</option>
+                                    <option value="FY24Q2">FY24Q2</option>
+                                    <option value="FY24Q1">FY24Q1</option>
+                                    <option value="FY23Q4">FY23Q4</option>
+                                    <option value="FY23Q3">FY23Q3</option>
+                                    <option value="FY23Q2">FY23Q2</option>
+                                    <option value="FY23Q1">FY23Q1</option>
+                                    <option value="FY22Q4">FY22Q4</option>
+                                    <option value="FY22Q3">FY22Q3</option>
+                                    <option value="FY22Q2">FY22Q2</option>
+                                    <option value="FY22Q1">FY22Q1</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bcs_months" class="form-label">BCS Months</label>
+                                <input type="text" class="form-control" id="bcs_months" name="bcs_months">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tcv_00" class="form-label">TCV '00</label>
+                                <input type="text" class="form-control" id="tcv_00" name="tcv_00">
+                            </div>
+                            <div class="mb-3">
+                                <label for="rev_fy22q3" class="form-label">REV FY22Q3</label>
+                                <input type="text" class="form-control" id="rev_fy22q3" name="rev_fy22q3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="rev_fy22q4" class="form-label">REV FY22Q4</label>
+                                <input type="text" class="form-control" id="rev_fy22q4" name="rev_fy22q4">
+                            </div>
+                            <div class="mb-3">
+                                <label for="columna1" class="form-label">Column a1</label>
+                                <input type="text" class="form-control" id="columna1" name="columna1">
+                            </div>
+                            <button class="btn btn-primary" type="submit">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h5 class="text-center">Datos almacenados</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Area</th>
+                                <th scope="col">Prob</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Did Server</th>
+                                <th scope="col">SM</th>
+                                <th scope="col">Hw Impact</th>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Proyect Name</th>
+                                <th scope="col">Book Date 2</th>
+                                <th scope="col">Book Period</th>
+                                <th scope="col">BCS Months</th>
+                                <th scope="col">TCV '00</th>
+                                <th scope="col">REV FY22Q3</th>
+                                <th scope="col">REV FY22Q4</th>
+                                <th scope="col">Column a1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for product in products %}
+                                <tr>
+                                    <td>{{ product.area }}</td>
+                                    <td>{{ product.prob }}</td>
+                                    <td>{{ product.type }}</td>
+                                    <td>{{ product.did_serv }}</td>
+                                    <td>{{ product.sm }}</td>
+                                    <td>{{ product.hw_impact }}</td>
+                                    <td>{{ product.customer }}</td>
+                                    <td>{{ product.proyect_name }}</td>
+                                    <td>{{ product.book_date2 }}</td>
+                                    <td>{{ product.book_period }}</td>
+                                    <td>{{ product.bcs_months }}</td>
+                                    <td>{{ product.tcv_00 }}</td>
+                                    <td>{{ product.rev_fy22q3 }}</td>
+                                    <td>{{ product.rev_fy22q4 }}</td>
+                                    <td>{{ product.columna1 }}</td>
+                                    <td>
+                                        <form action="/edit/{{ product.area }}" method="POST">
+                                            <!-- Campos ocultos con valores actuales -->
+                                            <input type="hidden" name="area" value="{{ product.area }}">
+                                            <input type="hidden" name="prob" value="{{ product.prob }}">
+                                            <input type="hidden" name="type" value="{{ product.type }}">
+                                            <input type="hidden" name="did_serv" value="{{ product.did_serv }}">
+                                            <input type="hidden" name="sm" value="{{ product.sm }}">
+                                            <input type="hidden" name="hw_impact" value="{{ product.hw_impact }}">
+                                            <input type="hidden" name="customer" value="{{ product.customer }}">
+                                            <input type="hidden" name="proyect_name" value="{{ product.proyect_name }}">
+                                            <input type="hidden" name="book_date2" value="{{ product.book_date2 }}">
+                                            <input type="hidden" name="book_period" value="{{ product.book_period }}">
+                                            <input type="hidden" name="bcs_months" value="{{ product.bcs_months }}">
+                                            <input type="hidden" name="tcv_00" value="{{ product.tcv_00 }}">
+                                            <input type="hidden" name="rev_fy22q3" value="{{ product.rev_fy22q3 }}">
+                                            <input type="hidden" name="rev_fy22q4" value="{{ product.rev_fy22q4 }}">
+                                            <input type="hidden" name="columna1" value="{{ product.columna1 }}">
+
+                                            <!-- Agrega los campos restantes con sus respectivos nombres -->
+                                            <!-- ... -->
+                                            <button class="btn btn-primary btn-sm" type="submit">Editar</button>
+                                        </form>
+                                        <a href="{{ url_for('delete', product_name=product.area) }}" class="btn btn-danger btn-sm">Eliminar</a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
