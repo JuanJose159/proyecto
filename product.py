@@ -1,5 +1,5 @@
 class Product:
-    def __init__(self, area, prob, type,did_serv,sm,hw_impact,customer,proyect_name,book_date2,book_period,bcs_months,tcv_00,rev_fy22q3,rev_fy22q4,columna1):
+    def __init__(self,area, prob, type,did_serv,sm,hw_impact,customer,proyect_name,book_date2,book_period,bcs_months,tcv_00,rev_fy22q3,rev_fy22q4,columna1):
         self.area = area
         self.prob = prob
         self.type = type
@@ -15,6 +15,7 @@ class Product:
         self.rev_fy22q3 = rev_fy22q3
         self.rev_fy22q4 = rev_fy22q4
         self.columna1 = columna1
+        
 
 
 
